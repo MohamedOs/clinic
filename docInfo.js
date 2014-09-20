@@ -6,16 +6,20 @@ var queryIndexDoc='select * from html where url="http://www.evapharma.com'+url+'
 Titanium.Yahoo.yql(queryIndexDoc, function(e){
 varsInfo.data=e.data;
 if(e.data.script[8]){
-	var ddd=e.data.script[8].content;
-}else{
-    var ddd='';
-}
-
+var ddd=e.data.script[8].content;
 var n = ddd.split("google.maps.LatLng(",[2]);
 var nx=n[1];
 nx=nx.split(");",[2]);
 var attRow=nx[0];
 attRow=attRow.split(", ",[2]);
+}else{
+var ddd='';
+var attRow=[];
+attRow[0]="1";
+att2:attRow[1]="1";
+}
+
+
 	arrInfo.push({
 		att:attRow[0],att2:attRow[1]
 		},{
