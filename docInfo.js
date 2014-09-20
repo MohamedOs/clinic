@@ -5,7 +5,7 @@ function docInfoFun(url){
 var queryIndexDoc='select * from html where url="http://www.evapharma.com'+url+'" and xpath="//*[@class=\'info\']|/html/head/script"';
 Titanium.Yahoo.yql(queryIndexDoc, function(e){
 varsInfo.data=e.data;
-if(e.data.script[8].content){
+if(e.data.script[8]){
 	var ddd=e.data.script[8].content;
 }else{
     var ddd='';
