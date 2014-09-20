@@ -5,7 +5,12 @@ function docInfoFun(url){
 var queryIndexDoc='select * from html where url="http://www.evapharma.com'+url+'" and xpath="//*[@class=\'info\']|/html/head/script"';
 Titanium.Yahoo.yql(queryIndexDoc, function(e){
 varsInfo.data=e.data;
-var ddd=e.data.script[8].content;
+if(e.data.script[8].content){
+	var ddd=e.data.script[8].content;
+}else{
+    var ddd='';
+}
+
 var n = ddd.split("google.maps.LatLng(",[2]);
 var nx=n[1];
 nx=nx.split(");",[2]);
