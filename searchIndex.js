@@ -2,7 +2,7 @@ var arr = [];
 var vars={};
 
 function searchDoc(doc,num){
-var queryIndexF1='select * from html where url="http://www.evapharma.com/ar/doctors/?search=name&name='+doc+'" and xpath="//*[@id=\'Serach_Results\']"';
+var queryIndexF1='select * from html where url="http://www.evapharma.com/ar/doctors/?search=name&name='+doc+'&PageNo=1" and xpath="//*[@id=\'Serach_Results\']"';
 Titanium.Yahoo.yql(queryIndexF1, function(e){
 vars.data=e.data;
 function getObjects(obj, key, val) {
