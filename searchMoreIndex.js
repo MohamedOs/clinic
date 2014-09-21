@@ -1,8 +1,8 @@
 var arr2 = [];
 var vars2={};
 
-function searchDocMore(loc,spe){
-var queryIndexF1='select * from html where url="http://www.evapharma.com/ar/doctors/?search=type&location='+loc+'&specialist='+spe+'&gender=0" and xpath="//*[@id=\'Serach_Results\']"';
+function searchDocMore(loc,spe,num){
+var queryIndexF1='select * from html where url="http://www.evapharma.com/ar/doctors/?search=type&location='+loc+'&specialist='+spe+'&gender=0&PageNo='+num+'" and xpath="//*[@id=\'Serach_Results\']"';
 Titanium.Yahoo.yql(queryIndexF1, function(e){
 vars2.data=e.data;
 function getObjects(obj, key, val) {
