@@ -16,7 +16,7 @@ for(var i=0;i<ex.data.div.length;i++){
 
 });
 }
-/*
+
 function post(url){
 arrtSingle = [];
 var queryIndexListIn='select * from html where url="'+url+'" and xpath="//*[@class=\'newsStoryTxt\']"';
@@ -29,4 +29,4 @@ arrtSingle.push({
 	});
 //Ti.API.info(varst.da.div.p.content);
 });	
-}*/
+}
