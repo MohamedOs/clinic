@@ -26,7 +26,10 @@ if(ez.data){
   if(ez.data.div){
     if(ez.data.div.p){
     	if(ez.data.div.p.content){
-    	  varst.da=ez.data.div.p.content;	
+    	  varst.da=ez.data.div.p.content;
+    	  arrtSingle.push({
+		content:ez.data.div.p.content
+	});
     	}else{
     	  varst.da='';	
     	}
