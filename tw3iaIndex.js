@@ -1,11 +1,11 @@
 var arrt = [];
 var varst={};
-var loaded=false;
+var arrtSingle = [];
 function list(){
 var queryIndexList='select * from html where url="http://www.youm7.com/%D8%B5%D8%AD%D8%A9%20%D9%88%D8%B7%D8%A8-245" and xpath="//*[@class=\'newsBriefBlock\']"';
 Titanium.Yahoo.yql(queryIndexList, function(ex){	
 varst.data=ex.data;
-loaded=true;
+
 for(var i=0;i<ex.data.div.length;i++){
 	arrt.push({
 		title:ex.data.div[i].div[1].h3.a.content,
@@ -24,6 +24,9 @@ var queryIndexListIn='select * from html where url="'+url+'" and xpath="//*[@cla
 Titanium.Yahoo.yql(queryIndexListIn, function(ez){	
 varst.da=ez.data;
 varst.daF=varst.da.div.p.content;
+arrtSingle.push({
+		content:evarst.da.div.p.content
+	});
 //Ti.API.info(varst.da.div.p.content);
 });	
 }
