@@ -23,6 +23,7 @@ var queryIndexListIn='select * from html where url="'+url+'" and xpath="//*[@cla
 Titanium.Yahoo.yql(queryIndexListIn, function(ez){	
 //varst.da=ez.data;
 varst.daDiv=ez.data.div;
+Ti.API.info(ez.data);
 //varst.daF=ez.data.div.p.content;
 arrtSingle.push({
 		content:ez.data.div.p.content
