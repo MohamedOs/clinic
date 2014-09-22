@@ -25,7 +25,7 @@ Titanium.Yahoo.yql(queryIndexListIn, function(ez){
 varst.da=ez.data;
 varst.daF=varst.da.div.p.content;
 arrtSingle.push({
-		content:evarst.da.div.p.content
+		content:varst.da.div.p.content
 	});
 //Ti.API.info(varst.da.div.p.content);
 });	
