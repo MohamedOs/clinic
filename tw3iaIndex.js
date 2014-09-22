@@ -21,7 +21,7 @@ function post(url){
 //arrtSingle = [];
 var queryIndexListIn='select * from html where url="'+url+'" and xpath="//*[@class=\'newsStoryTxt\']"';
 Titanium.Yahoo.yql(queryIndexListIn, function(ez){
-	alert("df");
+	alert(ez.data.div);
 //varst.da=ez.data;
 //varst.daDiv=ez.data.div;
 Ti.API.info(ez.data);
