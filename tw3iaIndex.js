@@ -5,6 +5,7 @@ function list(){
 var queryIndexList='select * from html where url="http://www.youm7.com/%D8%B5%D8%AD%D8%A9%20%D9%88%D8%B7%D8%A8-245" and xpath="//*[@class=\'newsBriefBlock\']"';
 Titanium.Yahoo.yql(queryIndexList, function(ex){	
 varst.data=ex.data;
+var loaded=true;
 for(var i=0;i<ex.data.div.length;i++){
 	arrt.push({
 		title:ex.data.div[i].div[1].h3.a.content,
