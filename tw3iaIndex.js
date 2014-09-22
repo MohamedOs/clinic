@@ -25,7 +25,7 @@ Titanium.Yahoo.yql(queryIndexListIn, function(ez){
 if(ez.data){
   if(ez.data.div){
     if(ez.data.div.p){
-    	if(){
+    	if(ez.data.div.p.content){
     	  varst.da=ez.data.div.p.content;	
     	}else{
     	  varst.da='';	
