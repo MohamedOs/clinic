@@ -27,7 +27,7 @@ if(ez.data){
     if(ez.data.div.p){
     	if(ez.data.div.p.content){
     	  varst.da=ez.data.div.p.content;
-    	  Ti.API.info(varst.da);
+    	 //Ti.API.info(varst.da);
     	  arrtSingle.push({
 		content:ez.data.div.p.content
 	});
@@ -46,7 +46,7 @@ varst.da='';
 	
 //varst.da=ez.data;
 //varst.daDiv=ez.data.div;
-Ti.API.info(ez.data);
+//Ti.API.info(ez.data);
 //varst.daF=ez.data.div.p.content;
 /*arrtSingle.push({
 		content:ez.data.div.p.content
