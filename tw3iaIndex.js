@@ -27,6 +27,7 @@ if(ez.data){
     if(ez.data.div.p){
     	if(ez.data.div.p.content){
     	  varst.da=ez.data.div.p.content;
+    	  Ti.API.info(varst.da);
     	  arrtSingle.push({
 		content:ez.data.div.p.content
 	});
