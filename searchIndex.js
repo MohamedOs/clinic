@@ -50,6 +50,9 @@ objects.push(i);
 }
 return objects;
 }
+if(e.data.div.table.tr.length=1){
+    vars.error=true;	
+}else{
 for (var i=1;i<e.data.div.table.tr.length-1;i++) {
 	arr.push({
 		name:e.data.div.table.tr[i].td[0].p,
@@ -58,6 +61,7 @@ for (var i=1;i<e.data.div.table.tr.length-1;i++) {
 		city:e.data.div.table.tr[i].td[3].p,
 		url:e.data.div.table.tr[i].td[4].a.href
 	});
+}
 }
 });
 
