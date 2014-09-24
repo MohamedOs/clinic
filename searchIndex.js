@@ -51,7 +51,7 @@ objects.push(i);
 return objects;
 }
 if(e.data.div.table.tr.length=1){
-    vars.error=true;	
+    vars.error=e.data.div.table.tr.length;	
 }else{
 for (var i=1;i<e.data.div.table.tr.length-1;i++) {
 	arr.push({
