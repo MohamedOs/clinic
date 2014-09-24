@@ -51,10 +51,10 @@ objects.push(i);
 return objects;
 }
 alert(e.data.div.table.tr.length);
-if(e.data.div.table.tr.length="1"){
+if(e.data.div.table.tr.length="3"){
     vars.error="error";	
     Ti.API.info(e.data.div.table.tr);
-}else if(e.data.div.table.tr.length="0"){
+}else if(e.data.div.table.tr.length<"3"){
     vars.error="error";	
     Ti.API.info(e.data.div.table.tr);	
 }else{
