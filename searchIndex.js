@@ -52,6 +52,7 @@ return objects;
 }
 //alert(e.data.div.table.tr.length);
 if(e.data.div.table.tr.length>3){
+	 vars.error="success";
 for (var i=1;i<e.data.div.table.tr.length-1;i++) {
 	arr.push({
 		name:e.data.div.table.tr[i].td[0].p,
