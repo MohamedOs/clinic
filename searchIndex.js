@@ -50,6 +50,7 @@ objects.push(i);
 }
 return objects;
 }
+alert(e.data.div.table.tr.length);
 if(e.data.div.table.tr.length="1"){
     vars.error="error";	
     Ti.API.info(e.data.div.table.tr);
