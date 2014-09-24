@@ -50,11 +50,8 @@ objects.push(i);
 }
 return objects;
 }
-alert(e.data.div.table.tr.length);
-if(e.data.div.table.tr.length="3"){
-    vars.error="error";	
-    Ti.API.info(e.data.div.table.tr);
-}else{
+//alert(e.data.div.table.tr.length);
+if(e.data.div.table.tr.length>3){
 for (var i=1;i<e.data.div.table.tr.length-1;i++) {
 	arr.push({
 		name:e.data.div.table.tr[i].td[0].p,
@@ -64,6 +61,10 @@ for (var i=1;i<e.data.div.table.tr.length-1;i++) {
 		url:e.data.div.table.tr[i].td[4].a.href
 	});
 }
+}else{
+    vars.error="error";	
+    Ti.API.info(e.data.div.table.tr);
+
 }
 });
 
