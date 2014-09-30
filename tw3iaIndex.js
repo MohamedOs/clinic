@@ -6,7 +6,7 @@ var queryIndexList='select * from html where url="http://www.youm7.com/%D8%B5%D8
 Titanium.Yahoo.yql(queryIndexList, function(ex){	
 varst.data=ex.data;
 
-for(var i=0;i<16;i++){
+for(var i=0;i<14;i++){
 	arrt.push({
 		title:ex.data.div[i].div[1].h3.a.content,
 		url:ex.data.div[i].div[0].a.href,
